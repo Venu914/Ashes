@@ -13,12 +13,16 @@ def divide(a, b):
     except ZeroDivisionError:
         return "Error: Cannot divide by zero"
 
+# New feature: Power function
+def power(a, b):
+    return a ** b
+
 print("Simple Calculator")
-print("Operations: +, -, *, /")
+print("Operations: +, -, *, /, ^")
 
 a = float(input("Enter first number: "))
 b = float(input("Enter second number: "))
-op = input("Enter operation (+,-,*,/): ")
+op = input("Enter operation (+, -, *, /, ^): ")
 
 if op == "+":
     print("Result =", add(a, b))
@@ -28,5 +32,7 @@ elif op == "*":
     print("Result =", multiply(a, b))
 elif op == "/":
     print("Result =", divide(a, b))
+elif op == "^":
+    print("Result =", power(a, b))
 else:
     print("Invalid Operation")
