@@ -1,5 +1,4 @@
-[12:12, 11/21/2025] Venu:     print("Invalid Operation")
-[12:26, 11/21/2025] Venu: import math
+import math
 
 def add(a, b):
     return a + b
@@ -50,5 +49,3 @@ elif op == "sqrt":
     print("Result =", square_root(a))
 else:
     print("Invalid Operation")
-~
-
